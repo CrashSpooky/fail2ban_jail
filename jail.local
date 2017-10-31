@@ -1,0 +1,11 @@
+[recidive]
+enabled = true
+logpath = /var/log/fail2ban.log*
+banaction = iptables-multiport
+bantime = 604800
+
+#findtime shorter, more efficient
+findtime = 86400
+
+#repeat offender tolerance?
+maxretry = 1
